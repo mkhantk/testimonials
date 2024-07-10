@@ -26,7 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./src/assets/desktop-screenshot.png)
+![](./src/assets/mobile-screenshot.png)
 
 
 
