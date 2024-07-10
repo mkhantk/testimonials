@@ -2,12 +2,15 @@ import { React } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
-import bgPattern from './assets/bg-pattern-quotation.svg'
+
+// import bgPattern from './assets/bg-pattern-quotation.svg'
 import daniel from './assets/image-daniel.jpg'
 import jeanette from './assets/image-jeanette.jpg'
 import jonatian from './assets/image-jonathan.jpg'
 import kira from './assets/image-kira.jpg'
 import patrick from './assets/image-patrick.jpg'
+
+const bgPattern = require('./assets/bg-pattern-quotation.svg');
 
 
 function App() {
