@@ -1,9 +1,9 @@
 {
-  "homepage": "https://mkhantk.github.io/testimonials",
   "name": "testimonials",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://mkhantk.github.io/testimonials",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
