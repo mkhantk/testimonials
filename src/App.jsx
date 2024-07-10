@@ -1,4 +1,4 @@
-import { React } from 'react'
+import { React, useState} from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
@@ -11,12 +11,12 @@ import patrick from './assets/image-patrick.jpg'
 
 
 function App() {
-  // const [count, setCount] = useState(0)
+  const [bgImg, setbgImg] = useState(bgPattern)
 
   return (
     <div className='bg-LightGrayishBlue flex flex-col justify-center items-center min-h-screen'>
       <div className='container grid p-2 my-10 w-5/6 gap-5 md:grid-cols-4'>
-        <div id='daniel'  style={{ backgroundImage: `url(${bgPattern})` }} className='card bg-ModerateViolet md:col-span-2 bg-[top_right_1.5rem] bg-no-repeat bg-[length:110px_110px]'>
+        <div id='daniel'  style={{ backgroundImage: `url(${bgImg})` }} className='card bg-ModerateViolet md:col-span-2 bg-[top_right_1.5rem] bg-no-repeat bg-[length:110px_110px]'>
           <div className='profile'>
             <img src={daniel} alt="daniel" />
             <div className='nameBox'>
