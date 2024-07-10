@@ -14,16 +14,19 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <div>
+    <div className='bg-LightGrayishBlue flex flex-col justify-center items-center min-h-screen'>
+      <div className='container grid p-2 my-10 w-5/6 gap-5 md:grid-cols-4'>
+        <div id='daniel' className='card bg-ModerateViolet md:col-span-2 bg-[top_right_1.5rem] bg-no-repeat bg-[length:110px_110px]' style={{ backgroundImage: `url(${bgPattern})` }}>
           <div className='profile'>
             <img src={daniel} alt="daniel" />
-            <div className='name'>Daniel Clifford</div>
-            <div className='status'>Verified Graduate</div>
+            <div className='nameBox'>
+              <div className='name '>Daniel Clifford</div>
+              <div className='status'>Verified Graduate</div>
+            </div>
+            
           </div>
           
-          <div className='subtext'>I received a job offer mid-course, and the subjects I learned were current, if not more so, 
+          <div className='subtext '>I received a job offer mid-course, and the subjects I learned were current, if not more so, 
           in the company I joined. I honestly feel I got every penny’s worth.</div>
           <p>“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
         transition and have heard some people who had an amazing experience here. I signed up 
@@ -32,23 +35,29 @@ function App() {
         the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
         </div>
 
-        <div>
+        <div id='jonathan' className='card bg-VeryDarkGrayishBlue'>
           <div className='profile'>
-            <img src={jonatian} alt="jonathan" />
-            <div className='name'>Jonathan Walters</div>
-            <div className='status'>Verified Graduate</div>
+            <img src={jonatian} alt="jonathan" className='ring-2 ring-VeryDarkGrayishBlue'/>
+            <div className='nameBox'>
+              <div className='name'>Jonathan Walters</div>
+              <div className='status'>Verified Graduate</div>
+            </div>
+            
           </div>
           
-          <div className='subtext'>The team was very supportive and kept me motivated</div>
+          <div className='subtext '>The team was very supportive and kept me motivated</div>
           <p>“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
           for a big company. This was one of the best investments I’ve made in myself. ”</p>
         </div>
 
-        <div>
+        <div id='jeanette' className='card bg-WhitE'>
           <div className='profile'>
-            <img src={jeanette} alt="jeanette" />
-            <div className='name'>Jeanette Harmon</div>
-            <div className='status'>Verified Graduate</div>
+            <img src={jeanette} alt="jeanette" className='ring-2 ring-white'/>
+            <div className='nameBox'>
+              <div className='name'>Jeanette Harmon</div>
+              <div className='status'>Verified Graduate</div>
+            </div>
+            
           </div>
           
           <div className='subtext'>An overall wonderful and rewarding experience</div>
@@ -56,11 +65,14 @@ function App() {
           while doing something I love. ”</p>
         </div>
 
-        <div>
+        <div id='patrick' className='card bg-VeryDarkBlackishBlue md:col-span-2'>
           <div className='profile'>
             <img src={patrick} alt="patrick" />
-            <div className='name'>Patrick Abrams</div>
-            <div className='status'>Verified Graduate</div>
+            <div className='nameBox'>
+              <div className='name'>Patrick Abrams</div>
+              <div  className='status'>Verified Graduate</div>
+    
+            </div>
           </div>
           
           <div className='subtext'>Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
@@ -71,22 +83,25 @@ function App() {
         an incredible community of smart and amazing people. ”</p>
         </div>
 
-        <div>
+        <div id='kira' className='card bg-WhitE md:col-start-4 md:row-start-1 md:row-span-2'>
           <div className='profile'>
-            <img src={kira} alt="kira" />
-            <div className='name'>Kira Whittle</div>
-            <div className='status'>Verified Graduate</div>
+            <img src={kira} alt="kira" className='ring-2 ring-white'/>
+            <div className='nameBox'>
+              <div className='name'>Kira Whittle</div>
+              <div className='status'>Verified Graduate</div>
+      
+            </div>
           </div>
           
           <div className='subtext'>Such a life-changing experience. Highly recommended!</div>
           <p>“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
-        professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
-        student of theirs who can only say wonderful things about the program. The entire curriculum and staff 
-        did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team 
-        project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial 
-        could ever have. In fact, I’ve often referred to it during interviews as an example of my developent 
-        experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 
-        100% recommend! ”</p>
+          professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
+          student of theirs who can only say wonderful things about the program. The entire curriculum and staff 
+          did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team 
+          project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial 
+          could ever have. In fact, I’ve often referred to it during interviews as an example of my developent 
+          experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 
+          100% recommend! ”</p>
         </div>
 
         
@@ -94,9 +109,9 @@ function App() {
 
       <div className="attribution">
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-          Coded by <a href="#">Your Name Here</a>.
+          Coded by <a href="#">Min Khant Kyaw</a>.
       </div>
-    </>
+    </div>
   )
 }
 
