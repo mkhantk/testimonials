@@ -16,7 +16,7 @@ function App() {
   return (
     <div className='bg-LightGrayishBlue flex flex-col justify-center items-center min-h-screen'>
       <div className='container grid p-2 my-10 w-5/6 gap-5 md:grid-cols-4'>
-        <div id='daniel' className='card bg-ModerateViolet md:col-span-2 bg-[top_right_1.5rem] bg-no-repeat bg-[length:110px_110px]' style={{ backgroundImage: `url(${bgPattern})` }}>
+        <div id='daniel' className='card bg-ModerateViolet md:col-span-2 bg-[top_right_1.5rem] bg-no-repeat bg-[length:110px_110px] bg-customImage'>
           <div className='profile'>
             <img src={daniel} alt="daniel" />
             <div className='nameBox'>

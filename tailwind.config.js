@@ -15,6 +15,9 @@ export default {
       },
       fontFamily: {
         body: ['Barlow Semi Condensed']
+      },
+      backgroundImage : {
+        'customImage' : "url('./src/assets/bg-pattern-quotation.svg')",
       }
     },
   },
