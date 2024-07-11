@@ -11,12 +11,12 @@ import patrick from './assets/image-patrick.jpg'
 
 
 function App() {
-  const [bgImg, setbgImg] = useState(bgPattern)
+  // const [bgImg, setbgImg] = useState(bgPattern)
 
   return (
     <div className='bg-LightGrayishBlue flex flex-col justify-center items-center min-h-screen'>
       <div className='container grid p-2 my-10 w-5/6 gap-5 md:grid-cols-4'>
-        <div id='daniel'  style={{ backgroundImage: `url(${bgImg})` }} className='card bg-ModerateViolet md:col-span-2 bg-[top_right_1.5rem] bg-no-repeat bg-[length:110px_110px]'>
+        <div id='daniel'  style={{ backgroundImage: `url(${bgPattern})` }} className='card bg-ModerateViolet md:col-span-2 bg-[top_right_1.5rem] bg-no-repeat bg-[length:110px_110px]'>
           <div className='profile'>
             <img src={daniel} alt="daniel" />
             <div className='nameBox'>
@@ -26,7 +26,7 @@ function App() {
             
           </div>
           
-          <div className='subtext '>I received a job offer mid-course, and the subjects I learned were current, if not more so, 
+          <div className='subtext '>I received a job offer mid-bgImgcourse, and the subjects I learned were current, if not more so, 
           in the company I joined. I honestly feel I got every penny’s worth.</div>
           <p>“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
         transition and have heard some people who had an amazing experience here. I signed up 
